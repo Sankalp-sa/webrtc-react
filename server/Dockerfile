@@ -10,7 +10,7 @@ COPY . .
 
 RUN yarn build
 
-CMD ["node", "."]
+CMD ["node", ".", "--host", "0.0.0.0"]
 
 EXPOSE 8080
 
